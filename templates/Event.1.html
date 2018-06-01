@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    
+    
+    <script src="home.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="homeCtrl">
+   
+   
+   <!--This houses the msbm logo in a bootstrap navbar-->
+	<nav class="navbar navbar-inverse bg-faded ">
+  		<a class="navbar-brand" href="#">
+    		<img src="/assets/msbm1.png" width="400px" height="50px" alt="">
+    	</a>
+	</nav>
+	
+    <div class="row">
+          <div class="col col-lg-2 bg-danger">
+              <div class="pos-f-t">
+                  
+                 <nav class="navbar navbar-light bg-danger" style="width:100%;">
+                   <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                          <li class="nav-item active">
+                            <a href="Home.html" class="btn btn-danger" role="button"><h5>Home</h5></a>
+                          </li>
+                               <div class="row" style="height: 20px;"></div>
+                             <li class="nav-item active">
+                            <a href="Classes.html" class="btn btn-danger" role="button"><h5>Classes</h5></a>
+                          </li>
+                                 <div class="row" style="height: 20px;"></div>
+                             <li class="nav-item active">
+                            <a href="Event.html" class="btn btn-danger" role="button"><h5>Events</h5></a>
+                          </li>
+                
+                               <div class="row" style="height: 20px;"></div>
+                             <li class="nav-item active">
+                            <a href="Assets.html" class="btn btn-danger" role="button"><h5>Asset Loan</h5></a>
+                          </li>
+                      
+                          <div class="row" style="height: 20px;"></div>
+                          <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#userModal"><h5>Add User</h5></button>
+                          </li>
+                    
+                            <div class="row" style="height: 20px;"></div>
+                           <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#InventoryModal"><h5>Inventory</h5></button>
+                          </li>
+                            <li class="nav-item">
+                           <a href="containers.html" class="btn btn-danger" role="button"><h5>Containers</h5></a>
+                          </li>
+                     
+                          <div class="row" style="height: 100%;"></div>
+                        </ul>
+                  </nav>
+                </div>
+            </div>
+            <div class="col col-lg-9">
+                  <div class="row" style="height: 50px;"></div>
+                <h3>Ongoing Events</h3><hr> 
+                  <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-8">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Event Name</th>
+                            <th>Location</th>
+                            <th>Asset Setup Number</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                          </tr>
+                          </thead>
+                          <tr ng-repeat= "x in loans | filter : {loan_purpose: 'Event' }">
+                            <td>{{x.loan_borrower }}</td>
+                            <td>{{x.loan_location }}</td>
+                            <td>Asst00{{x.loan_id}}</td>
+                            <td>{{x.date_created | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                            <td>Ongoing</td>
+                             <div class="col-sm-6">
+                          
+                          </table>
+                          
+                    </div>
+              </div>
+               <div class="row" style="height: 50px;"></div>
+                <h3>Previous Events</h3><hr> 
+                             <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-8">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Event Name</th>
+                            <th>Location</th>
+                            <th>Asset Setup Number</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                     <tr ng-repeat= "x in loans | filter : {loan_purpose: 'Event'}">
+                            <td>{{x.loan_borrower }}</td>
+                            <td>{{x.loan_location }}</td>
+                            <td>Asst00{{x.loan_id}}</td>
+                            <td>{{x.date_created | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                            <td>{{x.date_closed | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                             <div class="col-sm-6">
+                          
+                          </table>
+                          
+                    </div>
+              </div>
+                    
+                 
+                 
+               
+           
+            </div>
+         
+    </div>
+        
+    
+    
+    
+    
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

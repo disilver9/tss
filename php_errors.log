@@ -1,0 +1,312 @@
+[02-Feb-2018 20:37:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 20:37:04 UTC] PHP Stack trace:
+[02-Feb-2018 20:37:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 20:37:04 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 20:37:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 20:37:04 UTC] PHP Stack trace:
+[02-Feb-2018 20:37:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 20:37:04 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 20:41:58 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 20:41:58 UTC] PHP Stack trace:
+[02-Feb-2018 20:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 20:41:58 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 20:41:58 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 20:41:58 UTC] PHP Stack trace:
+[02-Feb-2018 20:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 20:41:58 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 20:42:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 20:42:35 UTC] PHP Stack trace:
+[02-Feb-2018 20:42:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 20:42:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 20:42:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 20:42:35 UTC] PHP Stack trace:
+[02-Feb-2018 20:42:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 20:42:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:13:54 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:13:54 UTC] PHP Stack trace:
+[02-Feb-2018 21:13:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:13:54 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:13:54 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 21:13:54 UTC] PHP Stack trace:
+[02-Feb-2018 21:13:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 21:13:54 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 21:17:22 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:17:22 UTC] PHP Stack trace:
+[02-Feb-2018 21:17:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:17:22 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:17:23 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 21:17:23 UTC] PHP Stack trace:
+[02-Feb-2018 21:17:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 21:17:23 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 21:18:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 21:18:28 UTC] PHP Stack trace:
+[02-Feb-2018 21:18:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 21:18:28 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[02-Feb-2018 21:18:28 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:18:28 UTC] PHP Stack trace:
+[02-Feb-2018 21:18:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:18:28 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:20:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Room.php on line 30
+[02-Feb-2018 21:20:33 UTC] PHP Stack trace:
+[02-Feb-2018 21:20:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Room.php:0
+[02-Feb-2018 21:20:33 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Room.php:30
+[02-Feb-2018 21:20:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:20:35 UTC] PHP Stack trace:
+[02-Feb-2018 21:20:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:20:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:20:57 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Room.php on line 30
+[02-Feb-2018 21:20:57 UTC] PHP Stack trace:
+[02-Feb-2018 21:20:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Room.php:0
+[02-Feb-2018 21:20:57 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Room.php:30
+[02-Feb-2018 21:20:57 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:20:57 UTC] PHP Stack trace:
+[02-Feb-2018 21:20:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:20:57 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:21:14 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[02-Feb-2018 21:21:14 UTC] PHP Stack trace:
+[02-Feb-2018 21:21:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[02-Feb-2018 21:21:14 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[02-Feb-2018 21:21:14 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[02-Feb-2018 21:21:14 UTC] PHP Stack trace:
+[02-Feb-2018 21:21:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[02-Feb-2018 21:21:14 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:14:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:14:38 UTC] PHP Stack trace:
+[08-May-2018 06:14:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:14:38 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:14:38 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:14:38 UTC] PHP Stack trace:
+[08-May-2018 06:14:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:14:38 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:18:58 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:18:58 UTC] PHP Stack trace:
+[08-May-2018 06:18:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:18:58 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:18:59 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:18:59 UTC] PHP Stack trace:
+[08-May-2018 06:18:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:18:59 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:19:16 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:19:16 UTC] PHP Stack trace:
+[08-May-2018 06:19:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:19:16 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:19:16 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:19:16 UTC] PHP Stack trace:
+[08-May-2018 06:19:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:19:16 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:20:37 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:20:37 UTC] PHP Stack trace:
+[08-May-2018 06:20:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:20:37 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:20:37 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:20:37 UTC] PHP Stack trace:
+[08-May-2018 06:20:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:20:37 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:21:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:21:29 UTC] PHP Stack trace:
+[08-May-2018 06:21:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:21:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:21:29 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:21:29 UTC] PHP Stack trace:
+[08-May-2018 06:21:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:21:29 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:24:15 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:24:15 UTC] PHP Stack trace:
+[08-May-2018 06:24:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:24:15 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:24:15 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:24:15 UTC] PHP Stack trace:
+[08-May-2018 06:24:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:24:15 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:25:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:25:04 UTC] PHP Stack trace:
+[08-May-2018 06:25:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:25:04 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:25:04 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:25:04 UTC] PHP Stack trace:
+[08-May-2018 06:25:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:25:04 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:25:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:25:17 UTC] PHP Stack trace:
+[08-May-2018 06:25:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:25:17 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:25:17 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:25:17 UTC] PHP Stack trace:
+[08-May-2018 06:25:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:25:17 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:29:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:29:20 UTC] PHP Stack trace:
+[08-May-2018 06:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:29:20 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:29:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:29:20 UTC] PHP Stack trace:
+[08-May-2018 06:29:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:29:20 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:30:09 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:30:09 UTC] PHP Stack trace:
+[08-May-2018 06:30:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:30:09 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:30:09 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:30:09 UTC] PHP Stack trace:
+[08-May-2018 06:30:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:30:09 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:31:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:31:20 UTC] PHP Stack trace:
+[08-May-2018 06:31:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:31:20 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:31:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:31:20 UTC] PHP Stack trace:
+[08-May-2018 06:31:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:31:20 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:34:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:34:12 UTC] PHP Stack trace:
+[08-May-2018 06:34:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:34:12 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:34:12 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:34:12 UTC] PHP Stack trace:
+[08-May-2018 06:34:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:34:12 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:34:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:34:52 UTC] PHP Stack trace:
+[08-May-2018 06:34:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:34:52 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:34:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:34:52 UTC] PHP Stack trace:
+[08-May-2018 06:34:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:34:52 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:35:05 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:35:05 UTC] PHP Stack trace:
+[08-May-2018 06:35:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:35:05 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:35:05 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:35:05 UTC] PHP Stack trace:
+[08-May-2018 06:35:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:35:05 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:37:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:37:44 UTC] PHP Stack trace:
+[08-May-2018 06:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:37:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:37:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:37:44 UTC] PHP Stack trace:
+[08-May-2018 06:37:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:37:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:38:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:38:02 UTC] PHP Stack trace:
+[08-May-2018 06:38:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:38:02 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:38:02 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:38:02 UTC] PHP Stack trace:
+[08-May-2018 06:38:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:38:02 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:39:14 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:39:14 UTC] PHP Stack trace:
+[08-May-2018 06:39:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:39:14 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:39:14 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:39:14 UTC] PHP Stack trace:
+[08-May-2018 06:39:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:39:14 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:39:19 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:39:19 UTC] PHP Stack trace:
+[08-May-2018 06:39:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:39:19 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:39:19 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:39:19 UTC] PHP Stack trace:
+[08-May-2018 06:39:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:39:19 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:39:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:39:52 UTC] PHP Stack trace:
+[08-May-2018 06:39:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:39:52 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:39:52 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:39:52 UTC] PHP Stack trace:
+[08-May-2018 06:39:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:39:52 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:40:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:40:35 UTC] PHP Stack trace:
+[08-May-2018 06:40:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:40:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:40:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:40:35 UTC] PHP Stack trace:
+[08-May-2018 06:40:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:40:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:41:35 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:41:35 UTC] PHP Stack trace:
+[08-May-2018 06:41:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:41:35 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:41:36 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:41:36 UTC] PHP Stack trace:
+[08-May-2018 06:41:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:41:36 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:43:06 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:43:06 UTC] PHP Stack trace:
+[08-May-2018 06:43:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:43:06 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:43:06 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:43:06 UTC] PHP Stack trace:
+[08-May-2018 06:43:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:43:06 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:43:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:43:33 UTC] PHP Stack trace:
+[08-May-2018 06:43:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:43:33 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:43:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:43:33 UTC] PHP Stack trace:
+[08-May-2018 06:43:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:43:33 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 06:43:46 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 06:43:46 UTC] PHP Stack trace:
+[08-May-2018 06:43:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 06:43:46 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 06:43:46 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 06:43:46 UTC] PHP Stack trace:
+[08-May-2018 06:43:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 06:43:46 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[08-May-2018 07:44:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[08-May-2018 07:44:44 UTC] PHP Stack trace:
+[08-May-2018 07:44:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[08-May-2018 07:44:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[08-May-2018 07:44:44 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[08-May-2018 07:44:44 UTC] PHP Stack trace:
+[08-May-2018 07:44:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[08-May-2018 07:44:44 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[10-May-2018 23:55:32 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getroom.php on line 31
+[10-May-2018 23:55:32 UTC] PHP Stack trace:
+[10-May-2018 23:55:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getroom.php:0
+[10-May-2018 23:55:32 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getroom.php:31
+[10-May-2018 23:55:32 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1049): Unknown database 'tSupport' in /home/ubuntu/workspace/php/Getloan.php on line 31
+[10-May-2018 23:55:32 UTC] PHP Stack trace:
+[10-May-2018 23:55:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/Getloan.php:0
+[10-May-2018 23:55:32 UTC] PHP   2. mysqli->mysqli() /home/ubuntu/workspace/php/Getloan.php:31
+[25-May-2018 07:59:08 UTC] PHP Fatal error:  Call to undefined function test_input() in /home/ubuntu/workspace/php/UserLogin.php on line 9
+[25-May-2018 07:59:08 UTC] PHP Stack trace:
+[25-May-2018 07:59:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:22:41 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/php/UserLogin.php on line 36
+[25-May-2018 08:37:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/php/UserLogin.php on line 38
+[25-May-2018 08:38:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/php/UserLogin.php on line 35
+[25-May-2018 08:38:10 UTC] PHP Stack trace:
+[25-May-2018 08:38:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:38:10 UTC] PHP   2. mysqli_num_rows() /home/ubuntu/workspace/php/UserLogin.php:35
+[25-May-2018 08:38:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/php/UserLogin.php on line 35
+[25-May-2018 08:38:37 UTC] PHP Stack trace:
+[25-May-2018 08:38:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:38:37 UTC] PHP   2. mysqli_num_rows() /home/ubuntu/workspace/php/UserLogin.php:35
+[25-May-2018 08:40:48 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/php/UserLogin.php on line 35
+[25-May-2018 08:40:48 UTC] PHP Stack trace:
+[25-May-2018 08:40:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:40:48 UTC] PHP   2. mysqli_num_rows() /home/ubuntu/workspace/php/UserLogin.php:35
+[25-May-2018 08:44:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/php/UserLogin.php on line 35
+[25-May-2018 08:44:08 UTC] PHP Stack trace:
+[25-May-2018 08:44:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:44:08 UTC] PHP   2. mysqli_num_rows() /home/ubuntu/workspace/php/UserLogin.php:35
+[25-May-2018 08:45:40 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/php/UserLogin.php on line 36
+[25-May-2018 08:45:40 UTC] PHP Stack trace:
+[25-May-2018 08:45:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 08:46:43 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/php/UserLogin.php on line 36
+[25-May-2018 08:46:43 UTC] PHP Stack trace:
+[25-May-2018 08:46:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/php/UserLogin.php:0
+[25-May-2018 09:01:09 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/php/UserLogin.php on line 37
+[25-May-2018 18:35:00 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/php/UserLogin.php on line 41
+[25-May-2018 18:35:08 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/php/UserLogin.php on line 41
+[25-May-2018 18:36:31 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/ubuntu/workspace/php/UserLogin.php on line 41
+[25-May-2018 18:37:19 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/ubuntu/workspace/php/UserLogin.php on line 41

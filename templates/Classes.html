@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+     <link rel="stylesheet" href="../css/extra.css">
+    <script src="home.js"></script>
+    
+  </head>
+  <body ng-app="myApp" ng-controller="homeCtrl">
+      <div class="row bg-danger" style="height:20px;"></div>
+        <div class="row bg-danger align-items-center">
+            <div class="col-9">
+    
+            </div>
+             <div class="col-2 " style="font-family: 'Work Sans'; color:white; font-size: 20px;  font-variant: small-caps; letter-spacing: 2px;" align = "right">
+                {{currentUser}}
+              </div>
+            <div class="col-1 ">
+              <img src="../assets/avatar.jpeg" class="avatar">
+            </div>
+        </div>
+        <div class="row bg-danger" style="height:20px;"></div>
+        <div class="row bg-faded" style="height:10px;"></div>
+        <div class="row " style="height:20px;"></div>
+        <div class="row">
+            <div class="col-1"></div>
+                       <div class="col-2">
+                  <div class="card bg-faded">
+                      <div class="card-block">
+                          <h4 class="card-title text-center">Asset Distribution Form</h4>
+                          <p class="card-text">When Using Assets Log it :)</p>
+                                  <form>
+                                            <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <select class="form-control custom-select" data-ng-model="asset_purpose">
+                                                      <option>Choose Purpose......</option>
+                                                      <option>Event</option>
+                                                      <option>Asset Loan</option>
+                                                      <option>Classroom</option>
+                                                      <option>Conference</option>
+                                                    </select>
+                                              </div>
+                                            </div>
+                                            
+                                              <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <select class="form-control custom-select" data-ng-model="asset_location">
+                                                      <option>Choose Location.....</option>
+                                                      <option ng-repeat="x in rooms">{{x.room_name}}</option>
+                                                    </select>
+                                              </div>
+                                            </div>
+                                            
+                                                <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Borrower's Name" data-ng-model="asset_borrower">
+                                                    </div>
+                                                    </div>
+                                  </form>
+                                  <div class="row" style="height: 25px;"></div>
+                                   <button type="button" class="btn btn-danger" data-ng-click="createLoan()">Create Loan</button>
+
+                      </div>
+                      </div>
+                <div class="row" style="height: 50px;"></div>
+                 <div class="card ">
+                      <div class="card-block">
+                          <h4 class="card-title text-center">Add a Room Here</h4>
+                                        <form>
+                                          <div class="form-group row">
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" data-ng-model="room_name" data-toggle="tooltip" data-placement="right" title="e.g. Exec Classroom 1 or sr14" placeholder="Classroom's Name ">
+                                                  </div>
+                                            </div>
+                                         </form>
+                                  
+                                  <button type="button" class="btn btn-danger" data-ng-click="createRoom()">Add Clasroom</button>
+
+                      </div>
+                      </div>
+            </div>
+             <div class="col-6">
+                    <div class="card text-center" style="padding:10px;">
+                      <div class="card-header">
+                        <ul class="nav nav-pills card-header-pills">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#menu1">Ongoing Classes</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#menu2">All Classes</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="tab-content">
+                      <div id="menu1" class="card-body tab-pane active">
+                        
+                       <div class="row" style="height: 50px;"></div>
+                <h3>Ongoing Classes</h3><hr> 
+                  <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-12">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Class Name</th>
+                                    <th>Location</th>
+                            <th>Asset Setup Number</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                     <tr ng-repeat= "x in loans | filter : {loan_purpose: 'Classroom'}">
+                            <td>{{x.loan_borrower }}</td>
+                            <td>{{x.loan_location }}</td>
+                            <td>Asst00{{x.loan_id}}</td>
+                            <td>{{x.date_created | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                            <td>Ongoing</td>
+                             <div class="col-sm-6">
+                          
+                          </table>
+                          
+                    </div>
+              </div>
+
+                            
+                      </div>
+                      <div id="menu2" class="card-body tab-pane fade">
+                          <h3>Previous Classes</h3><hr> 
+                             <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-12">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Class Name</th>
+                                <th>Location</th>
+                            <th>Asset Setup Number</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                     <tr ng-repeat= "x in loans | filter : {loan_purpose: 'Classroom'}">
+                            <td>{{x.loan_borrower }}</td>
+                            <td>{{x.loan_location }}</td>
+                            <td>Asst00{{x.loan_id}}</td>
+                            <td>{{x.date_created | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                            <td>{{x.date_closed | limitTo:10 | date :  "  MMMM d, y"}}</td>
+                             <div class="col-sm-6">
+                          
+                          </table>
+                          
+                    </div>
+              </div>
+                      </div>
+                     </div></div>
+                 
+             </div>
+             <div class="col-2">
+                 
+                 <div class="card" >
+                      <div class="card-header text-center">
+                        <h4>Menu</h4>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href "Home.html">Home</li>
+                        <li class="list-group-item"><a href="Classes.html" >Classes</li>
+                        <li class="list-group-item"><a href="Event.html" >Events</a></li>
+                        <li class="list-group-item"><a href="Assets.html" >Asset Loan</a></li>
+                        <li class="list-group-item"><a href="inventory.html">Inventory</a></li>
+                        <li class="list-group-item"><a href="containers.html">Containers</a></li>
+                      </ul>
+                    </div>
+                    <div class="row" style="height: 25px;"></div>
+                    <div class="card bg-faded ">
+                      <img class="card-img-bottom " src="../assets/msbm2.png" alt="Card image cap">
+                    </div>
+             </div>
+             <div class="col-1"></div>
+        </div>
+       
+
+                    
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

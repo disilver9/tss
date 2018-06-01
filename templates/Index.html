@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    
+    
+    <script src="home.js"></script>
+    
+  </head>
+  <body ng-app="myApp" ng-controller="homeCtrl">
+   
+   <!--This houses the msbm logo in a bootstrap navbar-->
+	<nav class="navbar navbar-light bg-danger">
+  		<a class="navbar-brand" href="#">
+    		<img src="/assets/msbm.png" width="450" height="180" alt="">
+    	</a>
+	</nav>
+	
+	<div class="row" style="height: 190px;">
+		
+	</div>
+	
+	<div class="row justify-content-center">
+		
+    	<div class="card bg-faded" style="width: 31rem; height: 19rem;">
+          <div class="card-block"  style="top: 70px;">
+             <h2 class="card-title" style="color:red;">Login</h2>
+        	<div class="row" style="height: 20px;"></div>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username" data-ng-model="username">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password" data-ng-model="password">
+              </div>
+            </form>
+            <div class="row" style="height: 20px;"></div>
+            <a class="btn btn-danger" data-ng-click="getUser()">Submit</a>
+          </div>
+		
+	</div>
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

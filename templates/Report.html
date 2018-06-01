@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+     <link rel="stylesheet" href="../css/extra.css">
+    
+    <script src="home.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="reportCtrl">
+       <div class="row bg-danger" style="height:20px;"></div>
+        <div class="row bg-danger align-items-center">
+            <div class="col-9">
+    
+            </div>
+             <div class="col-2 " style="font-family: 'Work Sans'; color:white; font-size: 20px;  font-variant: small-caps; letter-spacing: 2px;" align = "right">
+                {{currentUser}}
+              </div>
+            <div class="col-1 ">
+              <img src="../assets/avatar.jpeg" class="avatar">
+            </div>
+        </div>
+        <div class="row bg-danger" style="height:20px;"></div>
+        <div class="row bg-faded" style="height:10px;"></div>
+        
+        <div class="row " style="height:20px;"></div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-2">
+                  <div class="card bg-faded">
+                      <div class="card-block">
+                          <h4 class="card-title text-center">Add Asset</h4>
+                          <p class="card-text">Add Assets to this Setup</p>
+                                 <form>
+                                 <div class="form-group row">
+                                   <div class="col-sm-12">
+                                          <select class="form-control custom-select" data-ng-model="eqp_name" data-toggle="tooltip"  data-placement="right" title="if location is not seen here, add location via the Add Room Link in navbar" >
+                                            <option >Select Equipment.....</option>
+                                            <option>Cr1 bag</option>
+                                            <option>Cr2 bag</option>
+                                            <option>Clicker</option>
+                                            <option>Mouse</option>
+                                          </select>
+                                    </div>
+                                   </div>
+                                   
+                               
+                                    
+                                <div class="form-group row">
+                                      <div class="col-sm-12">
+                                          <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  data-toggle="tooltip" data-placement="right" title="e.g. Serial no. or Service tag Accounting " data-ng-model="serialnum" placeholder="Serial No.">
+                                        </div>
+                                  </div>
+                                  
+                                  <div class="form-group row">
+                                      <div class="col-sm-12">
+                                           <label for="descriptionTextarea1">Brief Description of Asset:</label>
+                                           <textarea class="form-control" id="descriptionTextarea1" rows="3"  data-toggle="tooltip" data-placement="right" title="e.g. the small black dell" data-ng-model= "eqpdescription"></textarea>
+                                        </div>
+                                  </div>
+                              </form>
+                                  <div class="row" style="height: 25px;"></div>
+                                   <button type="button" class="btn btn-danger" data-ng-click="addeqp()">Add Assets</button>
+
+                      </div>
+                    </div>
+               
+            </div> 
+            <div class="col-6">
+              <div class="row" >
+                     
+                         <div class="col col-5">
+                                <ul style="list-style-type:none">
+                                    <li><b>Loan no:</b> 00{{loanid}} </li>
+                                    <li><b>Date:</b> {{date | limitTo:10 | date :  "  MMMM d, y"}}   </li>
+                                    <li><b>Purpose:</b> {{loanPurpose}}   </li>
+                                    <li><b>Location:</b> {{loanLocation}}   </li>
+                                    <li><b>Borrower :</b>  {{borrower}}  </li>
+                                    <li></li>
+                                  </ul>
+                          </div>
+                          <div class="col col-3"></div>
+                          <div class="col col-4"> 
+                          <navbar class="navbar navbar-inverse">
+                      		<a class="navbar-brand" href="#">
+                        		<img src="/assets/msbm.png" width="200px" height="100px" alt="">
+                        	</a>
+                    	</navbar> 
+                    	</div>
+                      </div>
+                       <div class="row" style="height: 50px;"></div>
+                
+                      <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-10">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Equipment</th>
+                            <th>Serial no.</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                          <tr ng-repeat='l in items'>
+                            <td>{{l.eqp_name}}</td>
+                            <td>{{l.eqp_serialno}}</td>
+                            <td>{{l.eqp_description}}</td>
+                            <td>
+                             <div class="col-sm-12">
+                                  <select class="form-control custom-select" ng-value={{l.eqp_status}} >
+                                    <option ng-value= "In Use">In Use</option>
+                                    <option ng-value= "Missing">Missing</option>
+                                    <option ng=value="Retrieved">Retrieved</option>
+                                  </select>
+                            </div>
+                            </td>
+                            <td><button type="button" class="btn btn-danger" data-ng-click='deleqp(l, ng-value)'>Close</button></td>
+                          </tr>
+                          </table>
+                    </div>
+                 
+                 
+               
+           
+            </div>
+            </div>
+             <div class="col-2" >
+                 
+                 <div class="card" >
+                      <div class="card-header text-center">
+                        <h4>Menu</h4>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="Home.html" >Home</li>
+                        <li class="list-group-item"><a href="Classes.html" >Classes</li>
+                        <li class="list-group-item"><a href="Event.html" >Events</a></li>
+                        <li class="list-group-item"><a href="Assets.html" >Asset Loan</a></li>
+                        <li class="list-group-item"><a href="inventory.html">Inventory</a></li>
+                        <li class="list-group-item"><a href="containers.html">Containers</a></li>
+                      </ul>
+                    </div>
+                    <div class="row" style="height: 25px;"></div>
+                    <div class="card bg-faded ">
+                      <img class="card-img-bottom " src="../assets/msbm2.png" alt="Card image cap">
+                    </div>
+             </div>
+             <div class="col-1" ></div>
+            </div>   
+                
+   
+ 
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

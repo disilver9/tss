@@ -1,0 +1,22 @@
+.menubar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+ .avatar {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.ava{
+    /*font-family: 'Work Sans';*/
+    /*color: white;*/
+    /*font-size: 20px;*/
+    /*font-variant: small-caps; */
+    /*letter-spacing: 2px; */
+    /*text-align: right;*/
+    
+}

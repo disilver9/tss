@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    
+    
+    <script src="home.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="reportCtrl">
+   
+   
+   <!--This houses the msbm logo in a bootstrap navbar-->
+	<nav class="navbar navbar-inverse bg-faded ">
+  		<a class="navbar-brand" href="#">
+    		<img src="/assets/msbm1.png" width="400px" height="50px" alt="">
+    	</a>
+	</nav>
+	
+    <div class="row">
+          <div class="col col-lg-2 bg-danger">
+              <div class="pos-f-t">
+                  
+                  <nav class="navbar navbar-light ">
+                  <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                          <li class="nav-item active">
+                            <button class="btn btn-danger" type="button" data-ng-click='gethome()'><h5>Home        </h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                          <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#classModal"><h5>Add Room</h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                          <li>
+                          <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#assetModal"><h5>Asset Loan</h5></button>
+                          </li>
+                            <div class="row" style="height: 20px;"></div>
+                           <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#InventoryModal"><h5>Inventory</h5></button>
+                          </li>
+                          <div class="row" style="height: 300px;"></div>
+                        </ul>
+                  </nav>
+                </div>
+            </div>
+            <div class="col col-lg-10">
+              <div class="row" style="height: 50px;"></div>
+                      <div class="row" >
+                     
+                         <div class="col col-4">
+                                <ul style="list-style-type:none">
+                                    <li><b>Loan no:</b> 00{{loanid}} </li>
+                                    <li><b>Date:</b> {{date | limitTo:10 | date :  "  MMMM d, y"}}   </li>
+                                    <li><b>Purpose:</b> {{loanPurpose}}   </li>
+                                    <li><b>Location:</b> {{loanLocation}}   </li>
+                                    <li><b>Borrower :</b>  {{borrower}}  </li>
+                                    <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#equipModal">Add Assets</button></li>
+                                    <li></li>
+                                  </ul>
+                          </div>
+                               <div class="col col-3"></div>
+                          <div class="col col-5"> 
+                          <navbar class="navbar navbar-inverse">
+                      		<a class="navbar-brand" href="#">
+                        		<img src="/assets/msbm.png" width="200px" height="100px" alt="">
+                        	</a>
+                    	</navbar> 
+                    	</div>
+                      </div>
+                       <div class="row" style="height: 50px;"></div>
+                
+                      <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-8">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Quantity</th>
+                            <th>Equipment</th>
+                            <th>Serial no.</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th></th>
+                          </tr>
+                          </thead>
+                          <tr ng-repeat='l in items'>
+                            <td>{{l.eqp_quantity}}</td>
+                            <td>{{l.eqp_name}}</td>
+                            <td>{{l.eqp_serialno}}</td>
+                            <td>{{l.eqp_description}}</td>
+                            <td>
+                             <div class="col-sm-6">
+                                  <select class="form-control custom-select" data-ng-model="asset_purpose">
+                                    <option>In Use</option>
+                                    <option>Missing</option>
+                                    <option>Retrieved</option>
+                                  </select>
+                            </div>
+                            </td>
+                            <td><button type="button" class="btn btn-danger">Close</button></td>
+                          </tr>
+                          </table>
+                    </div>
+                 
+                 
+               
+           
+            </div>
+    </div>
+    
+<div class="modal fade" id="assetModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-danger ">
+      <div class="modal-header ">
+        <h5 class="modal-title " id="exampleModalLabel">Asset Loan Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <select class="form-control custom-select" data-ng-model="asset_purpose">
+                      <option>Choose Purpose......</option>
+                    </select>
+              </div>
+            </div>
+            
+              <div class="form-group row">
+                <div class="col-sm-12">
+                    <select class="form-control custom-select" data-ng-model="asset_location">
+                      <option>Choose Location.....</option>
+                      <option ng-repeat="x in rooms">{{x.room_name}}</option>
+                    </select>
+              </div>
+            </div>
+            
+                <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Borrower's Name" data-ng-model="asset_borrower">
+                    </div>
+                    </div>
+  </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-ng-click="createLoan()">Create Loan</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-danger ">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title " id="exampleModalLabel">Add a Room Here! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" data-ng-model="room_name" data-toggle="tooltip" data-placement="right" title="e.g. Exec Classroom 1 or sr14" placeholder="Classroom's Name ">
+                  </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-12">
+                     <label for="descriptionTextarea1">Brief Description of Location:</label>
+                     <textarea class="form-control" id="descriptionTextarea1" rows="3" data-ng-model="room_description" data-toggle="tooltip" data-placement="right" title="e.g. the sr14 building is located on the ground level of msbm south"></textarea>
+                  </div>
+            </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-ng-click="createRoom()">Add Clasroom</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="InventoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-danger ">
+      <div class="modal-header ">
+        <h5 class="modal-title " id="exampleModalLabel">Add Inventory Item  Here! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" data-toggle="tooltip" data-placement="right" title="e.g. MSBM-PC-001" placeholder="Item's Name "data-ng-model="item_name">
+                  </div>
+            </div>
+            
+              <div class="form-group row">
+                <div class="col-sm-6">
+                    <select class="form-control custom-select" data-ng-model="item_type">
+                      <option>Choose Item Type.....</option>
+                    </select>
+              </div>
+  
+                <div class="col-sm-6">
+                    <select class="form-control custom-select" data-toggle="tooltip" data-placement="right" title="if location is not seen here, add location via the Add Room Link in navbar" data-ng-model="item_location">
+                      <option>Choose Item Location.....</option>
+                    </select>
+              </div>
+            </div>
+            
+              <div class="form-group row">
+                <div class="col-sm-12">
+                    <select class="form-control custom-select" data-toggle="tooltip" data-placement="right" title="if location is not seen here, add location via the Add Room Link in navbar" data-ng-model="item_status">
+                      <option>Choose Item Status.....</option>
+                    </select>
+              </div>
+            </div>
+            
+            
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  placeholder="User: " data-ng-model="item_user">
+                  </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  placeholder="Model #:" data-ng-model="item_modelNo">
+                  </div>
+          
+                <div class="col-sm-6">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  placeholder="Serial #:" data-ng-model="item_serialNo">
+                  </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  placeholder="Inventory #" data-ng-model="item_inventoryNo">
+                  </div>
+  
+                <div class="col-sm-6">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  placeholder="Accounting #" data-ng-model="item_accountingNo">
+                  </div>
+            </div>
+            
+                <div class="form-group row">
+                <div class="col-sm-12">
+                     <label for="descriptionTextarea1">Brief Description of Item/Comments:</label>
+                     <textarea class="form-control" id="descriptionTextarea1" rows="3" data-toggle="tooltip" data-ng-model="item_description"data-placement="right" title="e.g. the item is white and has a black marker ink spot"></textarea>
+                  </div>
+            </div>
+            
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-ng-click="addItem()">Add Item</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="equipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-danger ">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title " id="exampleModalLabel">Add Assets to this Set Up! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+           <div class="form-group row">
+             <div class="col-sm-12">
+                    <select class="form-control custom-select" data-ng-model="eqp_name" data-toggle="tooltip"  data-placement="right" title="if location is not seen here, add location via the Add Room Link in navbar" >
+                      <option >Select Equipment.....</option>
+                      <option>Cr1 bag</option>
+                      <option>Cr2 bag</option>
+                      <option>Clicker</option>
+                      <option>Mouse</option>
+                    </select>
+              </div>
+             </div>
+             
+             <div class="form-group row">
+             <div class="col-sm-9">
+                    <select class="form-control custom-select" data-ng-model="quantity"  data-toggle="tooltip"  data-placement="right" title="if location is not seen here, add location via the Add Room Link in navbar" >
+                      <option >Quantity.....</option>
+                      <option ng-repeat="i in nums">{{i}} </option>
+                    </select>
+              </div>
+             </div>
+              
+          <div class="form-group row">
+                <div class="col-sm-9">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput"  data-toggle="tooltip" data-placement="right" title="e.g. Serial no. or Service tag Accounting " data-ng-model="serialnum" placeholder="Serial No.">
+                  </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-9">
+                     <label for="descriptionTextarea1">Brief Description of Asset:</label>
+                     <textarea class="form-control" id="descriptionTextarea1" rows="3"  data-toggle="tooltip" data-placement="right" title="e.g. the small black dell" data-ng-model= "eqpdescription"></textarea>
+                  </div>
+            </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-ng-click="addeqp()">Add Assets</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.17/angular-filter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+    
+    
+    <script src="home.js"></script>
+  </head>
+  <body ng-app="myApp" ng-controller="reportCtrl">
+   
+   
+   <!--This houses the msbm logo in a bootstrap navbar-->
+	<nav class="navbar navbar-inverse bg-faded ">
+  		<a class="navbar-brand" href="#">
+    		<img src="/assets/msbm1.png" width="400px" height="50px" alt="">
+    	</a>
+	</nav>
+	
+    <div class="row">
+          <div class="col col-lg-2 bg-danger">
+              <div class="pos-f-t">
+                  
+                <nav class="navbar navbar-light bg-danger" style="width:100%;">
+                   <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                          <li class="nav-item active">
+                            <button class="btn btn-danger" type="button" data-ng-click='gethome()'><h5>Home        </h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                           <li class="nav-item">
+                            <button class="btn btn-danger" type="button"><h5>TSR Manual</h5></button>
+                          </li>
+                          
+                          
+                          <div class="row" style="height: 20px;"></div>
+                          <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#classModal"><h5>Add Room</h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                          <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#userModal"><h5>Add User</h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                          <li>
+                          <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#assetModal"><h5>Asset Loan</h5></button>
+                          </li>
+                            <div class="row" style="height: 20px;"></div>
+                           <li class="nav-item">
+                            <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#InventoryModal"><h5>Inventory</h5></button>
+                          </li>
+                            <li class="nav-item">
+                           <a href="containers.html" class="btn btn-danger" role="button"><h5>Containers</h5></a>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                          <li>
+                          <button class="btn btn-danger" type="button"><h5>Hlpdsk Ticket</h5></button>
+                          </li>
+                          <div class="row" style="height: 20px;"></div>
+                             <li class="nav-item active">
+                            <button class="btn btn-danger" type="button"><h5>Events</h5></button>
+                          </li>
+                          <div class="row" style="height: 100%;"></div>
+                        </ul>
+                  </nav>
+                </div>
+            </div>
+            <div class="col col-lg-9">
+                <div class="row" style="height: 20px;"></div>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#groupingModal">Create Container</button>  
+                <div class="row" style="height: 20px;"></div>
+                  <h3>Containers</h3><hr> 
+                  <div class="row">
+                          <div class="col-lg-12 filler"></div>
+                           <div class="col-lg-12 filler"></div>
+                          <div class="col-lg-1"></div>
+                          <div class="col-lg-8">
+                          <table class="table table-striped">
+                          <thead>
+                            <tr>
+                            <th>Container Name</th>
+                            <th>Current Location</th>
+                            <th></th>
+                        
+                          </tr>
+                          </thead>
+                          <tr ng-repeat='l in items'>
+                            <td></td>
+                            <td></td>
+                            <td><button type="button" class="btn btn-primary">View Assets</button></td>
+                      
+                             <div class="col-sm-6">
+                          
+                          </table>
+                          
+                    </div>
+              </div>
+                 
+                 
+               
+           
+            </div>
+         
+    </div>
+    
+    
+    
+    
+    
+
+<div class="modal fade" id="groupingModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-danger ">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title " id="exampleModalLabel">Add a Container! </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group row">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" data-ng-model="room_name" data-toggle="tooltip" data-placement="right" title="Classroom Bag 1" placeholder="Group Name">
+                  </div>
+            </div>
+            
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" >Create Group</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
